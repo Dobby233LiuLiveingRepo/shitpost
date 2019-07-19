@@ -3,3 +3,10 @@ layout: default
 ---
 
 {{ content }}
+
+{% if paginator.total_posts > 1}
+<hr />
+<p>
+  <strong>Previous</strong>: {{ paginator.previous_page.title }}
+</p>
+{% endif %}
