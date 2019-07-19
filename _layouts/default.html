@@ -7,7 +7,7 @@
   </head>
   <body>
     <nav>
-      <a href="/">Home</a>
+      <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">Home</a>
 
     </nav>
     <h1>{{ page.title }}</h1>
