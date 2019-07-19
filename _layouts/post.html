@@ -3,3 +3,23 @@ layout: default
 ---
 
 {{ content }}
+
+{{% if paginator.total_posts > 1 %}}
+<hr />
+{{% if paginator.previous_page != nil %}}
+<p>
+  <strong>Previous page: </strong> 
+  <a href="{{ site.url }}/{{ paginator.previous_page_path }}">
+    {{ paginator.previous_page.title }}
+  </a>
+</p>
+{{% endif %}}
+{{% if paginator.next_page != nil %}}
+<p>
+  <strong>Next page: </strong> 
+  <a href="{{ site.url }}/{{ paginator.next_page_path }}">
+    {{ paginator.next_page.title }}
+  </a>
+</p>
+{{% endif %}}
+{{% endif %}}
