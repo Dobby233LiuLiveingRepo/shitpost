@@ -1,2 +1,3 @@
 paginate: 5
 baseurl: shitpost/
+permalink: /:year/:title:output_ext
