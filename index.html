@@ -27,7 +27,7 @@ title: Shitposts
 </center>
 {% endif %}
 {% for post in paginator.posts reversed %}
-  
+  <center>
   <h1><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h1>
   <p class="author">
     <span class="date">{{ post.date }}</span>
@@ -36,6 +36,7 @@ title: Shitposts
       {% if post.author or post.author == nil %} lannserfanworkclub (see commit) {% else %} {{ post.author }} {% endif %}
     </span>
   </p>
+</center>
   <div class="content">
     {{ post.content | truncate: 100 }}</pre>
   </div>
