@@ -1,4 +1,4 @@
 paginate: 4
 baseurl: /shitpost
 permalink: /:year/:title:output_ext
-paginate_path: "index/page-:num:output_ext"
+paginate_path: "index/page-:num.html"
