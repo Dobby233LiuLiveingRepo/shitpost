@@ -27,14 +27,17 @@ title: Shitposts
 </center>
 {% endif %}
 {% for post in paginator.posts %}
+  
   <h1><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h1>
   <p class="author">
     <span class="date">{{ post.date }}</span>
+    <code>&nbsp;//&nbsp;</code>
+    <span class="author-name">
+      {% if post.author or post.author == nil %} "lannserfanworkclub (see commit)" {% else %} {{ post.author }}
+    </span>
   </p>
   <div class="content">
-    <pre style="background:grey;border-radius:2px;margin:4px;color:white;font-size:18px;overflow:auto">
     {{ post.content }}
-    </pre>
   </div>
 {% endfor %}
 
