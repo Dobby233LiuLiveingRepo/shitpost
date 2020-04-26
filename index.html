@@ -37,7 +37,7 @@ title: Shitposts
     </span>
   </p>
   <div class="content">
-    {{ post.content }}
+    {{ post.content | truncate: 80 }}</pre>
   </div>
 {% endfor %}
 
