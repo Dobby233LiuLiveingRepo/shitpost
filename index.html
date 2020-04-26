@@ -26,7 +26,7 @@ title: Shitposts
 </div>
 </center>
 {% endif %}
-{% for post in paginator.posts reversed %}
+{% for post in paginator.posts %}
   <center>
   <h1><a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a></h1>
   <p class="author">
