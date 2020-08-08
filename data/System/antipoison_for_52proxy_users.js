@@ -1,3 +1,4 @@
+alert("puss cat strawberry juice anti")
 try{
 window["__a"+"nti"+"poi"+"so"+"n"]=function(ohman){
 if(!ohman||window["Dat"+("ae".substring(1,1))]["no"+"w"]()-ohman>=50) throw new Error("oi son")
