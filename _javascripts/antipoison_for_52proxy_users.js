@@ -1,5 +1,5 @@
 window["__a"+"nti"+"poi"+"so"+"n"]=function(ohman){
-if(!ohman||ohman-window["Dat"+("ae".substring(1,1))]["no"+"w"]()>50) throw new Error("oi son")
+if(!ohman||window["Dat"+("ae".substring(1,1))]["no"+"w"]()-ohman>=50) throw new Error("oi son")
 alert("todo")
 return "google.com"
 }
