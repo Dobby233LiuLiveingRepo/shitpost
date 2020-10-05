@@ -36,11 +36,11 @@ title: Shitposts
       {% if post.author or post.author == nil %} lannserfanworkclub (see commit) {% else %} {{ post.author }} {% endif %}
     </span>
   </p>
-
-  <div class="content">
-    {{ post.content | truncate: 120 }}</pre>
-  </div>
 </center>
+
+<div class="content">
+    {{ post.content | truncate: 120 }}</pre><!--hax-->
+</div>
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
