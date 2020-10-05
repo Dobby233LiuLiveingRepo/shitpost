@@ -1,8 +1,8 @@
 ---
 layout: post
+title: "!!!META Rewriting META!!!"
+author: Dobby233Liu
 ---
-
-=meta=
 
 Well, now I'm rewriting some stories to fix some grammar errors and make some more sense.
 
