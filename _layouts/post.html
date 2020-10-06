@@ -11,7 +11,7 @@ layout: default
 <center>
 <div class="more-posts">
  {% if page.previous %}
- <a href="{{ page.previous.url }}">
+ <a href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/'  }}">
    Previous
  </a>
  {% endif %}
@@ -19,7 +19,7 @@ layout: default
  <code>&nbsp;/&nbsp;</code>
  {% endif %}
  {% if page.next %}
- <a href="{{ page.next.url }}">
+ <a href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}">
    Next
  </a>
  {% endif %}
