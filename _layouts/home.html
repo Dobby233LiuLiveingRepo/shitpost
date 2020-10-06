@@ -39,6 +39,8 @@ layout: default
 <div class="content" style="overflow:auto;">
     {{ post.content | truncate: 120 }}</pre><!--hax-->
 </div>
+
+<hr />
 {% endfor %}
 
 {% if paginator.total_pages > 1 %}
