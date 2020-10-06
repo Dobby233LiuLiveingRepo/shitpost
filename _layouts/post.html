@@ -4,3 +4,21 @@ layout: default
 <div style="text-align:justify;white-space:pre-line;">
 {{ content }}
 </div>
+
+<hr />
+
+<center>
+<div class="more-posts">
+ {% if page.previous %}
+ <a href="{{ page.previous.url }}">
+   Previous
+ </a>
+ {% endif %}
+ <pre>&nbsp;/&nbsp;</pre>
+ {% if page.next %}
+ <a href="{{ page.next.url }}">
+   Next
+ </a>
+ {% endif %}
+</div>
+</center>
