@@ -6,7 +6,6 @@ layout: default
 </div>
 
 {% if page.previous or page.next %}
-
 <hr />
 
 <center>
@@ -16,7 +15,9 @@ layout: default
    Previous
  </a>
  {% endif %}
- <pre>&nbsp;/&nbsp;</pre>
+ {% if page.previous and page.next %}
+ <code>&nbsp;/&nbsp;</code>
+ {% endif %}
  {% if page.next %}
  <a href="{{ page.next.url }}">
    Next
