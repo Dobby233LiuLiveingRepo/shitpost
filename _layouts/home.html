@@ -13,7 +13,7 @@ layout: default
     <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">Previous</a>
   {% endif %}
   <code class="page_number">
-    {{ paginator.page }}/{{ paginator.total_pages }}
+    {{ paginator.page }}/{{ paginator.total_pages }}  
   </code>
   {% if paginator.next_page %}
     <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
