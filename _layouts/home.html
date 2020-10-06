@@ -1,0 +1,58 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<hr />
+
+{% if paginator.total_pages > 1 %}
+<center>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">Previous</a>
+  {% endif %}
+  <code class="page_number">
+    {{ paginator.page }}/{{ paginator.total_pages }}
+  </code>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
+  {% endif %}
+</div>
+</center>
+{% endif %}
+
+{% for post in paginator.posts %}
+<center>
+  <h1>
+    <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}">{{ post.title }}</a>
+  </h1>
+  <p class="author">
+    <span class="date">{{ post.date }}</span>
+    <code>&nbsp;//&nbsp;</code>
+    <span class="author-name">
+      {% if post.author == "" or post.author == nil %} lannserfanworkclub (see commit) {% else %} {{ post.author }} {% endif %}
+    </span>
+  </p>
+</center>
+
+<div class="content">
+    {{ post.content | truncate: 120 }}</pre><!--hax-->
+</div>
+{% endfor %}
+
+{% if paginator.total_pages > 1 %}
+<center>
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="previous">Previous</a>
+  {% endif %}
+  <code class="page_number">
+    {{ paginator.page }}/{{ paginator.total_pages }}
+  </code>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="next">Next</a>
+  {% endif %}
+</div>
+</center>
+{% endif %}
