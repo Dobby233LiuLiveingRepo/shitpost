@@ -5,9 +5,10 @@ layout: default
 {{ content }}
 </div>
 
+{% if page.previous or page.next %}
+
 <hr />
 
-{% if page.previous or page.next %}
 <center>
 <div class="more-posts">
  {% if page.previous %}
